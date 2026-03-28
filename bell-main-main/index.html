@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bell Schedule</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="page">
+  <header>
+    <div class="day-badge" id="dayBadge">—</div>
+    <div class="day-type-label" id="dayTypeLabel">—</div>
+    <div class="live-time" id="liveTime">—</div>
+  </header>
+
+  <div class="now-card">
+    <div class="now-eyebrow">
+      <div class="pulse-dot" id="pulseDot"></div>
+      <span id="nowEyebrow">Now</span>
+    </div>
+    <div class="now-period-name" id="nowName">—</div>
+
+    <div class="countdown">
+      <span class="cd-num" id="cdH" style="display:none">00</span>
+      <span class="cd-sep" id="cdSepH" style="display:none">:</span>
+      <span class="cd-num" id="cdM">00</span>
+      <span class="cd-sep">:</span>
+      <span class="cd-num" id="cdS">00</span>
+      <span class="cd-unit">remaining</span>
+    </div>
+
+    <div class="progress-track">
+      <div class="progress-fill" id="progFill"></div>
+    </div>
+
+    <div class="period-span">
+      <span id="spanStart">—</span>
+      <span id="spanEnd">—</span>
+    </div>
+  </div>
+
+  <div class="next-row" id="nextRow">
+    <div class="next-left">
+      <span class="next-eyebrow">Next up</span>
+      <span class="next-name" id="nextName">—</span>
+    </div>
+    <div class="next-time" id="nextTime">—</div>
+  </div>
+
+  <div class="sched-list" id="schedList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
